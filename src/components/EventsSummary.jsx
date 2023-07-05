@@ -1,16 +1,20 @@
 import React from 'react'
+import Title from './Title'
 
 function EventsSummary() {
   return (
-    <div className="events-wrap">
-    <div className="events-div">
+    <div className="event-wrap">
+    <div className="event-div" id="anchor">
+    {/* <Title titleProp={{title:"ABOUT US"}}/> */}
       <p className="body-text">
-        <span className="line-separator" /> Sample parallax with different
-        background images
+        <span className="line-separator" />
+        <Title titleProp={{title:"WELCOME TO THE FUTURE INFOTREK"}}/>
+        <span className="line-separator" />
+        Lorem ipsum dolor, sit amet consectto dolores commodi mollitia explicabo offidelectus aut.
         <span className="line-separator" />
       </p>
     </div>
-    <div className="events-second-div"></div>
+    <div className="event-inner-div"></div>
   </div>
   )
 }

@@ -1,14 +1,14 @@
 import React from "react";
 import Hero from "./Hero";
-import About from "./About";
 import EventsSummary from "./EventsSummary";
+import Aboutus from "./AboutUs"
 
 function LandingPage() {
   return (
     <>
       <Hero/>
-      <About/>
       <EventsSummary/>
+      <Aboutus/>
     </>
   );
 }

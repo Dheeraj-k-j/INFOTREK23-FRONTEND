@@ -11,10 +11,10 @@ function App() {
     <>
 
       <Navbar/>
+      <LandingPage/>
       {/* <LogIn/> */}
       {/* <SignUp/> */}
       {/* <Events/> */}
-      <LandingPage/>
     </>
   );
 }
