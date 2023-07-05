@@ -8,7 +8,7 @@ function LogIn() {
     <div className="form-container">
       <form
         className="form bg-slate-800 bg-opacity-80 backdrop-blur"
-        action=""
+        action="/"
         method="post"
       >
         <FormLogo />

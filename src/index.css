@@ -19,16 +19,9 @@
   box-sizing: border-box;
 }
 
-/* html,
+/* Hides the horizontal overflow */
 body {
-  overscroll-behavior: none;
-}*/
-
-body {
-  /* font-family: Arial Black, sans-serif;
-  text-align: center;
-  background: #000; */
-  height: 200vh;
+  overflow-x: hidden;
 }
 
 /* Ignore these gradients used for mobile menu theme later going to change */
@@ -73,7 +66,6 @@ body {
 }
 /* ---------------------Ignore End ------------------------------- */
 
-
 @-webkit-keyframes slide-top {
   0% {
     -webkit-transform: translateY(100px);
@@ -104,7 +96,6 @@ body {
   width: 100%;
   z-index: 100;
 }
-
 
 /* ---------------------------------------------------------------- */
 /* SECONDARY BUTTON CSS STYLING */
@@ -250,8 +241,6 @@ body {
 .cyber-cta:active .cyber-cta--foreground {
   transform: translateX(0px) translateY(0px);
 }
-
-
 
 /* ------------------------------------------- */
 /* CSS Related to components of sign up, log in and reset password */
@@ -510,7 +499,7 @@ body {
 
 /* ------------------------------------------------- */
 /*Event Component */
-.eventContainer{
+.eventContainer {
   width: 100vw;
   height: 100vh;
   padding-top: 10%;
@@ -612,4 +601,364 @@ body {
 .card:hover .character {
   opacity: 1;
   transform: translate3d(0%, -30%, 100px);
+}
+
+/* --------------------------CSS for landing page-------------------------------- */
+
+/* Resize in Mobile View */
+@media (min-width: 0) and (max-width: 767px) {
+  p,
+  .body-text {
+    font-size: 10px !important;
+  }
+  .down-arrow {
+    font-size: 20px !important;
+  }
+}
+/* Resize in Tablet View */
+@media (min-width: 768px) and (max-width: 991px) {
+  p,
+  .body-text {
+    font-size: 15px !important;
+  }
+  .down-arrow {
+    font-size: 30px !important;
+  }
+}
+
+.line-separator {
+  display: block;
+  width: 50%;
+  height: 1px;
+  text-align: center;
+  margin: 20px auto;
+  border-bottom: 1px solid grey;
+}
+
+/* CSS Hero Section */
+.hero-wrap {
+  height: 100%;
+  width: 100vw;
+  background: #ffffff url("./assets/eventsbg.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.hero-div {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  /* backdrop-filter: blur(2px); */
+  /* background-color: rgba(71, 58, 255, 0.219); */
+}
+.hero-div .hero-inner-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+.hero-div .hero-inner-div .down-arrow {
+  font-size: 40px;
+  color: #fff;
+}
+.hero-div .hero-inner-div p {
+  padding: 20px;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Text within hero section */
+.one {
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Orbitron", sans-serif;
+  background: transparent;
+}
+.XL-text {
+  position: absolute;
+  text-transform: uppercase;
+  opacity: 0;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  /* transform: translateY(-50px); */
+  font-family: "Orbitron", sans-serif;
+  font-size: min(10vw, 85px);
+  line-height: min(10vw, 81px);
+  text-shadow: 0px 0px 21px white;
+  z-index: 1;
+  animation: fadeIn 2s ease-in 0s forwards;
+}
+.L-text {
+  position: absolute;
+  font-family: "Orbitron", sans-serif;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  font-size: min(10vw, 85px);
+  font-weight: bolder;
+
+  line-height: min(10vw, 81px);
+
+  color: transparent;
+  -webkit-text-stroke: 0.3px white;
+
+  transform: translateY(-25px);
+}
+.fab {
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.container-center {
+  width: 80vw;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---------------------BUTTON----------------- */
+/* Primary Button Glitch animation and CSS*/
+.primary-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.primary-button,
+primary-button::after {
+  width: 380px;
+  height: 86px;
+  font-size: 36px;
+  font-family: "Orbitron", sans-serif;
+  background: linear-gradient(135deg, #fd0130 95%, transparent 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 88px;
+  outline: transparent;
+  position: relative;
+}
+
+.primary-button::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: "REGISTER NOW";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    #ff013c 5%
+  );
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  clip-path: var(--slice-0);
+}
+
+.primary-button:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+.featured {
+  position: absolute;
+  bottom: 20px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bolder;
+  transform: translateY(-10vh);
+  color: #ffde59;
+  left: 10vw;
+  font-size: 2rem;
+
+  text-transform: uppercase;
+  animation: fadeIn 2s ease-in 0s forwards;
+}
+.featured::after {
+  content: "MCA";
+  font-family: inherit;
+
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  font-size: 2rem;
+  color: transparent;
+  -webkit-text-stroke: 0.3px rgba(217, 231, 67, 0.65);
+
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 700px) {
+  .two {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .two > img {
+    max-height: 104px;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-120px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEaseIn {
+  0% {
+    transform: translateY(-180px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* CSS About Section */
+.about-wrap {
+  height: 100%;
+  width: 100vw;
+  background: #ffffff url("./assets/aboutbg.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.about-div {
+  display: table;
+  height: 50vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.about-div p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+}
+.about-inner-div {
+  display: table;
+  height: 50vh;
+  width: 100vw;
+  background-color: transparent;
+}
+
+/* CSS Events Summary */
+.events-wrap {
+  height: 100%;
+  width: 100vw;
+  background: #ffffff url("./assets/herobg.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.events-div {
+  display: table;
+  height: 50vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.events-div p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+}
+.events-second-div {
+  display: table;
+  height: 50vh;
+  width: 100vw;
+  background-color: transparent;
 }
