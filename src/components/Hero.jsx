@@ -1,4 +1,5 @@
 import React from "react";
+import PrimaryBtn from "./PrimaryBtn"
 
 function Hero() {
   return (
@@ -9,10 +10,11 @@ function Hero() {
              <div className="XL-text">INFOTREK 23</div>
              <div className="L-text">INFOTREK 23</div>
             <div className="container-center"></div>
-            <span to="/auth/register" className="GetStarted">
-              REGISTER NOW
-            </span>
-            <div className="featured">MCA</div>
+            <div className="hero-btn-container">
+            <PrimaryBtn/>
+            {/* <PrimaryBtn/> */}
+            </div>
+            <div className="featured">ACM</div>
           </div>
         </div>
       </div>

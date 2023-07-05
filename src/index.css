@@ -22,6 +22,7 @@
 /* Hides the horizontal overflow */
 body {
   overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Ignore these gradients used for mobile menu theme later going to change */
@@ -320,7 +321,7 @@ body {
   padding: 30px;
   margin-top: 10%;
   overflow: hidden;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   clip-path: polygon(0 20px, 20px 0, 20px 0, 20px 0, 0 20px, 0 20px);
   animation: form-open 1s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.5s;
 
@@ -603,8 +604,8 @@ body {
   transform: translate3d(0%, -30%, 100px);
 }
 
-/* --------------------------CSS for landing page-------------------------------- */
 
+/* --------------------------CSS for landing page-------------------------------- */
 /* Resize in Mobile View */
 @media (min-width: 0) and (max-width: 767px) {
   p,
@@ -676,11 +677,12 @@ body {
   color: white;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  /* flex-wrap: nowrap; */
   justify-content: center;
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
-  font-family: "Orbitron", sans-serif;
   background: transparent;
 }
 .XL-text {
@@ -691,7 +693,8 @@ body {
   text-align: center;
   color: white;
   /* transform: translateY(-50px); */
-  font-family: "Orbitron", sans-serif;
+  /* font-family: "Orbitron", sans-serif; */
+  font-family: 'Montserrat Subrayada', sans-serif;
   font-size: min(10vw, 85px);
   line-height: min(10vw, 81px);
   text-shadow: 0px 0px 21px white;
@@ -700,7 +703,8 @@ body {
 }
 .L-text {
   position: absolute;
-  font-family: "Orbitron", sans-serif;
+  /* font-family: "Orbitron", sans-serif; */
+  font-family: 'Montserrat Subrayada', sans-serif;
 
   text-transform: uppercase;
   text-align: center;
@@ -730,26 +734,29 @@ body {
 
 /* ---------------------BUTTON----------------- */
 /* Primary Button Glitch animation and CSS*/
-.primary-btn-container {
+.hero-btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  padding-top: 20rem;
   width: 100%;
-}
+} 
 
 .primary-button,
 primary-button::after {
-  width: 380px;
-  height: 86px;
-  font-size: 36px;
+  width: 300px;
+  height: 70px;
+  font-size: 1.3rem;
+  font-weight: 700;
   font-family: "Orbitron", sans-serif;
-  background: linear-gradient(135deg, #fd0130 95%, transparent 5%);
+  background: linear-gradient(135deg, #ffde59 95%, transparent 5%);
   border: 0;
-  color: #fff;
-  letter-spacing: 3px;
-  line-height: 88px;
+  color: #40128b;
+  letter-spacing: 2px;
   outline: transparent;
   position: relative;
+  margin: 0 2%;
 }
 
 .primary-button::after {
@@ -770,11 +777,11 @@ primary-button::after {
   background: linear-gradient(
     45deg,
     transparent 3%,
-    #00e6f6 3%,
-    #00e6f6 5%,
-    #ff013c 5%
+    #40128b 3%,
+    #40128b 5%,
+    #ffde59 5%
   );
-  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #40128b;
   clip-path: var(--slice-0);
 }
 
