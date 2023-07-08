@@ -7,7 +7,8 @@ import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
 import foreground1 from "./foreground1.png";
 import secLogo from "./sec-logo.png";
-
+import mainLogo from "./main-logo.png"
+import acmLogo from "./acmLogo.png"
 export {
   logo,
   menu,
@@ -17,5 +18,7 @@ export {
   linkedin,
   twitter,
   foreground1,
-  secLogo
+  secLogo,
+  mainLogo,
+  acmLogo
 };

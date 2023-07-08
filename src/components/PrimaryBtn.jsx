@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 function PrimaryBtn() {
   return (
-      <button className='primary-button'>REGISTER NOW</button>
-  )
+    <Link to="/SignUp">
+      <button className="primary-button">REGISTER NOW</button>
+    </Link>
+  );
 }
 
-export default PrimaryBtn
+export default PrimaryBtn;

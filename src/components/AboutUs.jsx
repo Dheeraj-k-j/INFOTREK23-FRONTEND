@@ -15,11 +15,7 @@ function AboutUs() {
       </div>
       <div className="about-second-div">
           <div className="about-us-description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quos
-            ad necessitatibus, culpa quae accusantium molestiae officiis quas
-            animi facilis, eos voluptates? Deleniti accusamus autem voluptas sed
-            recusandae amet totam. Soluta tenetur veniam dolore aperiam. Vitae
-            facere in animi tenetur labore quod cumque perferendis nobis
+           Vitae facere in animi tenetur labore quod cumque perferendis nobis
             corrupti vel iste, doloremque eos expedita aut, laboriosam, nisi ea
             reiciendis laborum sequi a rem? Suscipit, amet odit voluptatibus
             dolore soluta assumenda deserunt a nulla dolorum et corporis quas

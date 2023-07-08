@@ -9,8 +9,7 @@ function EventsSummary() {
       <p className="body-text">
         <span className="line-separator" />
         <Title titleProp={{title:"WELCOME TO THE FUTURE INFOTREK"}}/>
-        <span className="line-separator" />
-        Lorem ipsum dolor, sit amet consectto dolores commodi mollitia explicabo offidelectus aut.
+        Tagline
         <span className="line-separator" />
       </p>
     </div>

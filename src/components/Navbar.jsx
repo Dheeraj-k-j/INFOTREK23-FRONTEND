@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
+import NavButton from "./NavButton";
 import styles from "../style";
 
 const Navbar = () => {
@@ -13,10 +15,9 @@ const Navbar = () => {
     >
       <div className={`${styles.boxWidth} `}>
         <nav className="w-full flex py-6 justify-between items-center navbar">
-          <a href="/">
+          <Link to="/">
             <img src={logo} alt="Infotrek logo" className="w-[250px]" />
-          </a>
-
+          </Link>
           <ul className="list-none sm:flex hidden justify-end items-center flex-1">
             {navLinks.map((nav) => (
               <li
@@ -26,20 +27,11 @@ const Navbar = () => {
                 } mr-10`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <Link to={`/${nav.id}`}>{nav.title}</Link>
               </li>
             ))}
             <li className="mr-10">
-              {/* Refactor the button in secondary button component */}
-              <a className="secondary-btn">
-                <div className="cyber-cta">
-                  <div className="cyber-cta--background">
-                    <div></div>
-                  </div>
-                  <div className="cyber-cta--foreground"></div>
-                  <div className="cyber-cta--text">SIGN IN</div>
-                </div>
-              </a>{" "}
+              <NavButton buttonProp={{ to: "/SignUp", text: "SIGN IN" }} />
             </li>
           </ul>
 
@@ -65,20 +57,11 @@ const Navbar = () => {
                     } mb-4`}
                     onClick={() => setActive(nav.title)}
                   >
-                    <a href={`#${nav.id}`}>{nav.title}</a>
+                    <Link to={`/${nav.id}`}>{nav.title}</Link>
                   </li>
                 ))}
                 <li className="mb-4">
-                  {/* Refactor the button in secondary button component */}
-                  <a className="secondary-btn">
-                    <div className="cyber-cta">
-                      <div className="cyber-cta--background">
-                        <div></div>
-                      </div>
-                      <div className="cyber-cta--foreground"></div>
-                      <div className="cyber-cta--text">SIGN IN</div>
-                    </div>
-                  </a>
+                  <NavButton buttonProp={{ to: "/SignUp", text: "SIGN IN" }} />
                 </li>
               </ul>
             </div>
