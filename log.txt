@@ -1,0 +1,54 @@
+commit 45a50bd7ef768380493a69dc97e02b70a15c4b71
+Author: Abhiusnees <abhiusnees.live36@gmail.com>
+Date:   Mon Jul 10 01:17:01 2023 +0530
+
+    Events Page Added
+
+commit 49360734f2d5e8c53e71cfd444ee98d55e7c1b20
+Author: Dheeraj <dkjoshi8293@gmail.com>
+Date:   Sun Jul 9 18:40:42 2023 +0530
+
+    Upadated
+
+commit a07bfd12757993076dd85b6aa242737292f91dd0
+Author: Dheeraj <dkjoshi8293@gmail.com>
+Date:   Sat Jul 8 07:16:49 2023 +0530
+
+    Frontend structure created
+
+commit 6cdfc0a9399aa506f15ed3e7415ae46462a50b49
+Author: Dheeraj <dkjoshi8293@gmail.com>
+Date:   Wed Jul 5 17:39:33 2023 +0530
+
+    About us structure created
+
+commit c9e7d8056c7f64496672c5d6fe9e56e42b71a794
+Author: Dheeraj <dkjoshi8293@gmail.com>
+Date:   Wed Jul 5 13:01:31 2023 +0530
+
+    Hero Section Structure Complete
+
+commit 09240db2b18e12ce10e5d03f6582127ec699b9b2
+Author: Dheeraj <dkjoshi8293@gmail.com>
+Date:   Wed Jul 5 12:06:37 2023 +0530
+
+    Landing page progress
+
+commit 664a57dc900c4365e72dd4af6d4f4e14c5573261
+Merge: ce8f835 aba4273
+Author: Dheeraj <dkjoshi8293@gmail.com>
+Date:   Tue Jun 27 20:14:11 2023 +0530
+
+    Merge branch 'main' of https://github.com/Dheeraj-k-j/INFOTREK23-FRONTEND
+
+commit ce8f835b7d54cf0a0d361674e8429375132fb46f
+Author: Dheeraj <dkjoshi8293@gmail.com>
+Date:   Tue Jun 27 20:08:27 2023 +0530
+
+    So much code need refactoring ignore it at the end we will do it
+
+commit aba42733fc13ad0064e5872165bb75879693b426
+Author: Dheeraj Kumar <69802179+Dheeraj-k-j@users.noreply.github.com>
+Date:   Tue Jun 27 20:01:22 2023 +0530
+
+    Initial commit
