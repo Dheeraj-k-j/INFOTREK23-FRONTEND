@@ -781,7 +781,7 @@ primary-button::after {
     #40128b 5%,
     #faf600 5%
   );
-  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #40128b;
+  text-shadow: -3px -3px 0px #faf600, 3px 3px 0px #40128b;
   clip-path: var(--slice-0);
 }
 
@@ -921,10 +921,14 @@ primary-button::after {
   flex-direction: column;
 } */
 .title{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: 200%;
   font-weight: 700;
-  color: #22edfc;
+}
+
+.tag-line{
+  font-size: 125%;
+  letter-spacing: 0.05em;
 }
 /* ----------------------------------------- */
 
@@ -942,7 +946,7 @@ primary-button::after {
   height: 50vh;
   width: 100vw;
   /* backdrop-filter: blur(2px); */
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   /* display: flex;
   align-items: center;
   flex-direction: column; */
@@ -951,8 +955,6 @@ primary-button::after {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  font-size: 20px;
-  color: white;
 }
 .event-inner-div {
   display: table;
@@ -980,10 +982,6 @@ primary-button::after {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  color: #fff;
-  font-size: 20px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 .about-second-div {
   display: table;
@@ -1042,7 +1040,9 @@ primary-button::after {
   margin-left: auto; /* Pushes the item to the right */
 }
 
-/* ------------------GENERAL CLASSES CAN ADD ON ANY ELEMENT---------- */
+
+/* ------------------------------------------------------- */
+/* ------------------GENERAL CLASSES REUSABLE------------- */
 .bottom-0{
   position: absolute;
   bottom: 15%;
@@ -1051,4 +1051,20 @@ primary-button::after {
 .width-long{
   width: 12rem;
   height: 3rem;
+}
+
+.scndry-clr{
+  color: #22edfc;
+}
+
+.prmry-clr{
+  color: #faf600;
+}
+
+
+/* ------------------------------ */
+/* About page */
+.abous-us{
+  padding: 10%;
+  text-align: center;
 }

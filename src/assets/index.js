@@ -5,7 +5,6 @@ import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
-import foreground1 from "./foreground1.png";
 import secLogo from "./sec-logo.png";
 import mainLogo from "./main-logo.png"
 import acmLogo from "./acmLogo.png"
@@ -17,7 +16,6 @@ export {
   instagram,
   linkedin,
   twitter,
-  foreground1,
   secLogo,
   mainLogo,
   acmLogo
