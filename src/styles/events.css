@@ -1,0 +1,87 @@
+.event-cards-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Cyber', sans-serif;
+    background-image: url("/Events-Background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(90deg, #1d0e4a 70%, #120a2b 70%), #0c0425; */
+  }
+
+  /* h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  } */
+
+  .page-title {
+    /* margin-top: 2rem; */
+    padding-top: 6rem;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+    /* color:gold; */
+    font-family: 'Orbitron', sans-serif;
+    font-size: 200%;
+    font-weight: 700;
+    color: #fff;
+    animation: flicker 1.5s infinite alternate;
+
+  }
+
+  /* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(234, 255, 0),
+      0 0 80px rgb(234, 255, 0),
+      0 0 90px rgb(234, 255, 0),
+      0 0 100px rgb(234, 255, 0),
+      0 0 150px rgb(234, 255, 0);
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+.event-cards-container {
+    /* position: relative;
+    width: 1100px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+
+
+  
+  @font-face {
+    font-family: Cyber;
+    src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+    font-display: swap;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  

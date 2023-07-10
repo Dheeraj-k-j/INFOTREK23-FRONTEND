@@ -34,6 +34,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
 import LandingPage from './components/LandingPage';
 import SignUp from './components/SignUp';
+import Events from './components/Events';
 import AboutUs from './components/AboutUs';
 import './index.css';
 
@@ -44,6 +45,7 @@ ReactDOM.render(
         <Route path="/" element={<App />}>
           <Route path="/" element={<LandingPage />} />
           <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/Events" element={<Events />}/>
           <Route path="/AboutUs" element={<AboutUs />} />
         </Route>
       </Routes>
