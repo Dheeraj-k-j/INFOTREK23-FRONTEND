@@ -1061,6 +1061,24 @@ primary-button::after {
   color: #faf600;
 }
 
+.sml-btn{
+  /* width: 65%;
+  height: 1.6rem; */
+  /* height: 200%; */
+  /* height: 100%; */
+  width: 100px;
+  height: 30px;
+}
+
+.small-txt{
+  font-size: 10px;
+}
+
+.altrnt-optn{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
 
 /* ------------------------------ */
 /* About page */

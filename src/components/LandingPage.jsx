@@ -3,10 +3,10 @@ import Hero from "./Hero";
 import EventsSummary from "./EventsSummary";
 import AboutUsSummary from "./AboutUsSummary"
 
-function LandingPage() {
+function LandingPage({authProp}) {
   return (
     <>
-      <Hero/>
+      <Hero authProp={authProp}/>
       <EventsSummary/>
       <AboutUsSummary/>
     </>

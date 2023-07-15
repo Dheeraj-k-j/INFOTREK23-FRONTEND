@@ -5,7 +5,7 @@ import { navLinks } from "../constants";
 import NavButton from "./NavButton";
 import styles from "../style";
 
-const Navbar = () => {
+const Navbar = ({authProp}) => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
 
@@ -31,7 +31,7 @@ const Navbar = () => {
               </li>
             ))}
             <li className="mr-10">
-              <NavButton buttonProp={{ to: "/SignUp", text: "SIGN IN" }} />
+              <NavButton authProp={authProp} />
             </li>
           </ul>
 
@@ -61,7 +61,7 @@ const Navbar = () => {
                   </li>
                 ))}
                 <li className="mb-4">
-                  <NavButton buttonProp={{ to: "/SignUp", text: "SIGN IN" }} />
+                  <NavButton  authProp={authProp} />
                 </li>
               </ul>
             </div>
