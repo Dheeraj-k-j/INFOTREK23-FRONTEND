@@ -1,7 +1,7 @@
 import React from "react";
 import {secLogo} from '../assets'
 
-function FromLogo() {
+function FormLogo() {
   return (
     <>
       <img src={secLogo} alt="On page logo" className="on-page-logo" />
@@ -10,4 +10,4 @@ function FromLogo() {
   );
 }
 
-export default FromLogo;
+export default FormLogo;

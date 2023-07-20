@@ -5,10 +5,14 @@ import Events from "./components/Events";
 import SignUp from "./components/SignUp";
 import LogIn from "./components/LogIn";
 import Footer from "./components/Footer";
-import AboutUs from "./components/AboutUsSummary";
+import AboutUs from "./components/AboutUs";
+import ForgetPassword from "./components/ForgetPassword";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
-import { getJwtTokenFromCookie, removeJwtTokenFromCookie } from "./authorization";
-import api from "./api"
+import {
+  getJwtTokenFromCookie,
+  removeJwtTokenFromCookie,
+} from "./authorization";
+import api from "./api";
 import "./index.css";
 
 function App() {
@@ -23,26 +27,24 @@ function App() {
     setUser(user);
   };
 
-  useEffect( () => {
+  useEffect(() => {
     const tokenValue = getJwtTokenFromCookie();
     if (!!tokenValue) {
-
       const fetchUser = async (tokenValue) => {
         try {
-          const response = await api.get(
-            "/users/mydata",
-            {
-              headers: {
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${tokenValue}`,
-              },
-            }
-          );
+          const response = await api.get("/users/mydata", {
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${tokenValue}`,
+            },
+          });
           const user = response?.data?.data?.user;
           console.log(user);
           setUserValue(user);
         } catch (error) {
-          console.error("Error fetching the authentication api using this token log in again");
+          console.error(
+            "Error fetching the authentication api using this token log in again"
+          );
           removeJwtTokenFromCookie();
           setTokenValue(null);
           setUserValue(null);
@@ -88,8 +90,12 @@ function App() {
               />
             }
           />
-          <Route path="/Events" element={<Events />} />
+          <Route
+            path="/Events"
+            element={<Events authProp={{ user: user, token: token }} />}
+          />
           <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/ForgetPassword" element={<ForgetPassword />} />
         </Route>
       </Routes>
       <Footer />

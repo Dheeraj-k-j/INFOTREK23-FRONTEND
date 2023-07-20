@@ -6,8 +6,10 @@ import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
 import secLogo from "./sec-logo.png";
-import mainLogo from "./main-logo.png"
-import acmLogo from "./acmLogo.png"
+import mainLogo from "./main-logo.png";
+import acmLogo from "./acmLogo.png";
+import aboutImg from "./about-img.png";
+import infotrekPast from "./infotrekpast.jpg"
 export {
   logo,
   menu,
@@ -18,5 +20,7 @@ export {
   twitter,
   secLogo,
   mainLogo,
-  acmLogo
+  acmLogo,
+  aboutImg,
+  infotrekPast
 };

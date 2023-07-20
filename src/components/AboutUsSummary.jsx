@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Title from "./Title";
 import SubmitButton from "./SubmitButton";
 
@@ -15,15 +16,11 @@ function AboutUs() {
       </div>
       <div className="about-second-div">
           <div className="about-us-description">
-           Vitae facere in animi tenetur labore quod cumque perferendis nobis
-            corrupti vel iste, doloremque eos expedita aut, laboriosam, nisi ea
-            reiciendis laborum sequi a rem? Suscipit, amet odit voluptatibus
-            dolore soluta assumenda deserunt a nulla dolorum et corporis quas
-            hic maiores sed reiciendis, laudantium exercitationem tenetur fuga
-            optio dolores consequuntur architecto est facilis. Possimus,
-            assumenda?
+          Infotrek, an Inter-Departmental Technical Symposium, held under ACM, runs over few days, bringing in the indigenous minds of the Campus under one roof thereby giving a stiff competition.
           </div>
-          <SubmitButton btnProp={{text:"KNOW MORE", classes:"bottom-0 width-long"}}/>
+          <Link to="/AboutUs">
+          <button className="explore-button">MORE ABOUT US</button>
+          </Link>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ function LandingPage({authProp}) {
   return (
     <>
       <Hero authProp={authProp}/>
-      <EventsSummary/>
+      <EventsSummary authProp={authProp}/>
       <AboutUsSummary/>
     </>
   );
