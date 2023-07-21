@@ -32,6 +32,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
+import Team from './components/Team';
 import LandingPage from './components/LandingPage';
 import SignUp from './components/SignUp';
 import './index.css';
@@ -43,6 +44,7 @@ ReactDOM.render(
         <Route path="/" element={<App />}>
           <Route path="/" element={<LandingPage />} />
           <Route path="/SignUp" element={<SignUp />} />
+          <Route path='/team' element={<Team />} />
         </Route>
       </Routes>
     </BrowserRouter>
