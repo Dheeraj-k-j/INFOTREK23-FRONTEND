@@ -3,7 +3,7 @@ import { secLogo, acmLogo } from "../assets";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footer ">
       <div className="footer-upper">
         <img className="footer-logo" src={acmLogo} alt="" />
         <p>logo</p>

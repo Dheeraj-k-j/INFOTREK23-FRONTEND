@@ -7,12 +7,4 @@ import Hero from "./Hero";
 import EventCard from "./EventCard";
 import ProfileCard from "./ProfileCard";
 
-export {
-  LandingPage,
-  Navbar,
-  Footer,
-  SignUp,
-  Hero,
-  ProfileCard,
-  EventCard,
-}
+export { LandingPage, Navbar, Footer, SignUp, Hero, ProfileCard, EventCard };

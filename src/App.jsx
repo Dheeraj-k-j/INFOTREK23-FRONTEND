@@ -7,6 +7,7 @@ import LogIn from "./components/LogIn";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
 import ForgetPassword from "./components/ForgetPassword";
+import Team from "./components/Team";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import {
   getJwtTokenFromCookie,
@@ -96,6 +97,7 @@ function App() {
           />
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/ForgetPassword" element={<ForgetPassword />} />
+          <Route path="/Team" element={<Team />} />
         </Route>
       </Routes>
       <Footer />

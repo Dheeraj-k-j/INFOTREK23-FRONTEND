@@ -8,8 +8,12 @@ import twitter from "./twitter.svg";
 import secLogo from "./sec-logo.png";
 import mainLogo from "./main-logo.png";
 import acmLogo from "./acmLogo.png";
+import bhavya from "./bhavya.jpeg";
+import abhi from "./abhi.jpeg";
+import dheeraj from "./dheeraj.jpeg";
+import pawan from "./pawan.jpeg";
+import piyush from "./piyush.jpeg";
 import aboutImg from "./about-img.png";
-import infotrekPast from "./infotrekpast.jpg"
 export {
   logo,
   menu,
@@ -21,6 +25,10 @@ export {
   secLogo,
   mainLogo,
   acmLogo,
-  aboutImg,
-  infotrekPast
+  bhavya,
+  dheeraj,
+  abhi,
+  pawan,
+  piyush,
+  aboutImg
 };

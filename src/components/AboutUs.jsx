@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "./Title";
-import { aboutImg, infotrekPast } from "../assets";
+import { aboutImg } from "../assets";
 
 const AboutUs = () => {
   return (
