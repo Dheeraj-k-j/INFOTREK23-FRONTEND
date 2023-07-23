@@ -2,7 +2,7 @@ import React from "react";
 import team from "../assets/team.jpg";
 import MemberCard from "./MemberCard";
 import styles from "../style";
-import { bhavya, dheeraj, abhi, pawan, piyush } from "../assets";
+import { bhavya, dheeraj, abhi, pawan, piyush, LeepakshiYadav, AnkitSoni, arkaprabha, HarshitSharma, umang, varun, subham, akshay, YasserKhan, Deepeeka, SonuGupta, simran, ShivamDubey } from "../assets";
 
 const Data = [
   {
@@ -17,8 +17,7 @@ const Data = [
       {
         name: "Bhavya Pandey",
         socials: "https://www.linkedin.com/in/bhavya-pandey-38b593246",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-        // import image from assets of bhavya
+        desc: "",
         image: bhavya,
       },
       {
@@ -43,7 +42,91 @@ const Data = [
   },
   {
     batch: "2024",
-    members: [],
+    members: [
+      {
+        name: "Leepakshi Yadav",
+        socials: "https://www.linkedin.com/in/leepakshi-yadav-12975a11a/",
+        desc: "",
+        image: LeepakshiYadav,
+      },
+      {
+        name: "Harshit Sharma",
+        socials: "https://www.linkedin.com/in/harshit-sharma-56306a227/",
+        desc: "",
+        image: HarshitSharma,
+      },
+      {
+        name: "Varun Singh",
+        socials: "https://www.linkedin.com/in/varun14gb/",
+        image: varun,
+        desc: "",
+      },
+      {
+        name: "Ankit Soni",
+        socials: "https://www.linkedin.com/in/ankit-soni-988525147/",
+        desc: "",
+        image: AnkitSoni,
+      },
+      {
+        name: "Umang Kumar",
+        socials: "https://www.linkedin.com/in/umangkumarumk/",
+        desc: "",
+        image: umang,
+      },
+      {
+        name: "Arkaprabha Ghosh",
+        socials: "https://www.linkedin.com/in/arkaprabha-ghosh-a2733917a/",
+        image: arkaprabha,
+        desc: "",
+      },
+      {
+        name: "Subham Jha",
+        socials: "/",
+        image: subham,
+        desc: "",
+      },
+      {
+        name: "Akshay Raj Singh",
+        socials: "/",
+        desc: "",
+        image: akshay,
+      },
+    ],
+  },
+  {
+    batch: "2023",
+    members: [
+      {
+        name: "Shivam Dubey",
+        socials: "https://www.linkedin.com/in/shivam-dubey-862086203/",
+        desc: "",
+        image: ShivamDubey,
+      },
+      {
+        name: "Simran Garg",
+        socials: "https://www.linkedin.com/in/simran-garg-0501",
+        desc: "",
+        image: simran,
+      },
+      {
+        name: "Sonu Gupta",
+        socials: "https://www.linkedin.com/in/104-sonu-gupta/",
+        image: SonuGupta,
+        desc: "",
+      },
+      {
+        name: "Deepeeka",
+        socials: "https://www.linkedin.com/in/deepeekachudasama/",
+        desc: "",
+        image: Deepeeka,
+      },
+      {
+        name: "Yasser Osman Khan",
+        socials: "https://www.linkedin.com/in/yasserkhan45",
+        desc: "",
+        image: YasserKhan,
+      }
+    ],
   },
 ];
 const Team = () => {
@@ -53,7 +136,7 @@ const Team = () => {
         {" "}
         // mx width define krni h
         <div className={`mt-[110px] ${styles.paddingX}`}>
-          <h1 className="title mb-3">Meet The Team</h1>
+          <h1 className="title mb-3 scndry-clr">Meet The Team</h1>
           <div className="">
             {Data.map((batchData) => {
               return (
