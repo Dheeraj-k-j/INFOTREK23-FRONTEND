@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ErrorPage from "./components/ErrorPage";
 import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
 import Events from "./components/Events";
@@ -98,6 +99,7 @@ function App() {
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/ForgetPassword" element={<ForgetPassword />} />
           <Route path="/Team" element={<Team />} />
+          <Route path="/*" element={<ErrorPage />} />
         </Route>
       </Routes>
       <Footer />
