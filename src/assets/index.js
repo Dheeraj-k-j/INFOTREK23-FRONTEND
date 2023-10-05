@@ -15,6 +15,9 @@ import abhi from "./abhi.jpeg";
 import dheeraj from "./dheeraj.jpeg";
 import pawan from "./pawan.jpeg";
 import piyush from "./piyush.jpeg";
+import rishabh from "./rishabh.jpeg";
+import mokshda from "./mokshda.jpg";
+import tanmay from "./tanmay.jpg";
 // 24 batch
 import akshay from "./akshay.jpg";
 import AnkitSoni from "./AnkitSoni.jpg";
@@ -62,5 +65,8 @@ export {
   subham,
   umang,
   varun,
-  eventsbgMain
+  eventsbgMain,
+  rishabh,
+  mokshda,
+  tanmay
 };
