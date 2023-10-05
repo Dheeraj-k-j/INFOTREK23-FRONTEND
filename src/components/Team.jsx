@@ -2,12 +2,18 @@ import React from "react";
 import team from "../assets/team.jpg";
 import MemberCard from "./MemberCard";
 import styles from "../style";
-import { bhavya, dheeraj, abhi, pawan, piyush, LeepakshiYadav, AnkitSoni, arkaprabha, HarshitSharma, umang, varun, subham, akshay, YasserKhan, Deepeeka, SonuGupta, simran, ShivamDubey } from "../assets";
+import { bhavya, dheeraj, abhi, pawan, piyush, rishabh, mokshda, tanmay, LeepakshiYadav, AnkitSoni, arkaprabha, HarshitSharma, umang, varun, subham, akshay, YasserKhan, Deepeeka, SonuGupta, simran, ShivamDubey } from "../assets";
 
 const Data = [
   {
     batch: "2025",
     members: [
+      {
+        name: "Rishabh Jain",
+        socials: "https://www.linkedin.com/in/rishabh-jain-067303199/",
+        desc: "",
+        image: rishabh,
+      },
       {
         name: "Piyush Singh",
         socials: "https://www.linkedin.com/in/piyush-singh-305b721b2/",
@@ -37,6 +43,18 @@ const Data = [
         socials: "https://www.linkedin.com/in/pawan-agrawal-316a16190/",
         image: pawan,
         desc: "Office Bearer",
+      },
+      {
+        name: "Mokshda Dave",
+        socials: "https://www.linkedin.com/in/mokshda-dave-9a0ab8252",
+        image: mokshda,
+        desc: "",
+      },
+      {
+        name: "Tanmay Mandal",
+        socials: "https://www.linkedin.com/in/tanmay-mandal-47286b190/",
+        image: tanmay,
+        desc: "",
       },
     ],
   },
