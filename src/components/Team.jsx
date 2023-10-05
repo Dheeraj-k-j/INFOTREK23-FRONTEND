@@ -11,32 +11,32 @@ const Data = [
       {
         name: "Piyush Singh",
         socials: "https://www.linkedin.com/in/piyush-singh-305b721b2/",
-        desc: "",
+        desc: "Office Bearer",
         image: piyush,
       },
       {
         name: "Bhavya Pandey",
         socials: "https://www.linkedin.com/in/bhavya-pandey-38b593246",
-        desc: "",
+        desc: "Office Bearer",
         image: bhavya,
       },
       {
         name: "Abhiusnees Nandi",
         socials: "https://www.linkedin.com/in/abhiusnees-nandi-b19349196",
-        desc: "",
+        desc: "Office Bearer",
         image: abhi,
       },
       {
         name: "Dheeraj Joshi",
         socials: "https://www.linkedin.com/in/imjoshiane",
-        desc: "",
+        desc: "Office Bearer",
         image: dheeraj,
       },
       {
         name: "Pawan Agarwal",
         socials: "https://www.linkedin.com/in/pawan-agrawal-316a16190/",
         image: pawan,
-        desc: "",
+        desc: "Office Bearer",
       },
     ],
   },
@@ -44,51 +44,51 @@ const Data = [
     batch: "2024",
     members: [
       {
+        name: "Ankit Soni",
+        socials: "https://www.linkedin.com/in/ankit-soni-988525147/",
+        desc: "ChairPerson",
+        image: AnkitSoni,
+      },
+      {
+        name: "Umang Kumar",
+        socials: "https://www.linkedin.com/in/umangkumarumk/",
+        desc: "Treasurer",
+        image: umang,
+      },
+      {
         name: "Leepakshi Yadav",
         socials: "https://www.linkedin.com/in/leepakshi-yadav-12975a11a/",
-        desc: "",
+        desc: "Office Bearer",
         image: LeepakshiYadav,
       },
       {
         name: "Harshit Sharma",
         socials: "https://www.linkedin.com/in/harshit-sharma-56306a227/",
-        desc: "",
+        desc: "Office Bearer",
         image: HarshitSharma,
       },
       {
         name: "Varun Singh",
         socials: "https://www.linkedin.com/in/varun14gb/",
         image: varun,
-        desc: "",
-      },
-      {
-        name: "Ankit Soni",
-        socials: "https://www.linkedin.com/in/ankit-soni-988525147/",
-        desc: "",
-        image: AnkitSoni,
-      },
-      {
-        name: "Umang Kumar",
-        socials: "https://www.linkedin.com/in/umangkumarumk/",
-        desc: "",
-        image: umang,
+        desc: "Web Master",
       },
       {
         name: "Arkaprabha Ghosh",
         socials: "https://www.linkedin.com/in/arkaprabha-ghosh-a2733917a/",
         image: arkaprabha,
-        desc: "",
+        desc: "Office Bearer",
       },
       {
         name: "Subham Jha",
         socials: "/",
         image: subham,
-        desc: "",
+        desc: "Office Bearer",
       },
       {
         name: "Akshay Raj Singh",
         socials: "/",
-        desc: "",
+        desc: "Office Bearer",
         image: akshay,
       },
     ],
@@ -99,20 +99,20 @@ const Data = [
       {
         name: "Shivam Dubey",
         socials: "https://www.linkedin.com/in/shivam-dubey-862086203/",
-        desc: "",
+        desc: "Chairman",
         image: ShivamDubey,
       },
       {
         name: "Simran Garg",
         socials: "https://www.linkedin.com/in/simran-garg-0501",
-        desc: "",
-        image: simran,
+        desc: "Vice Chairperson",
+        image: simran, 
       },
       {
         name: "Sonu Gupta",
         socials: "https://www.linkedin.com/in/104-sonu-gupta/",
         image: SonuGupta,
-        desc: "",
+        desc: "Treasurer",
       },
       {
         name: "Deepeeka",
@@ -134,7 +134,7 @@ const Team = () => {
     <div className="min-h-screen h-full relative">
       <div className="team-wrap flex flex-col">
         {" "}
-        // mx width define krni h
+        {/* // mx width define krni h */}
         <div className={`mt-[110px] ${styles.paddingX}`}>
           <h1 className="title mb-3 scndry-clr">Meet The Team</h1>
           <div className="">
@@ -144,7 +144,7 @@ const Team = () => {
                   <h2 className="text-2xl text-white mb-5">
                     {batchData.batch}
                   </h2>
-                  <div className="flex flex-row gap-4 pb-[90px] scrollbar-hide overflow-x-scroll wrapper-member-card p-2 gap-x-8">
+                  <div className="flex flex-row gap-4 pb-[90px] flex-wrap justify-center wrapper-member-card p-2 gap-x-8">
                     {batchData.members.map((member) => {
                       return (
                         <MemberCard
