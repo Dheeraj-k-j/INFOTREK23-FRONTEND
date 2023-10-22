@@ -2,7 +2,29 @@ import React from "react";
 import team from "../assets/team.jpg";
 import MemberCard from "./MemberCard";
 import styles from "../style";
-import { bhavya, dheeraj, abhi, pawan, piyush, rishabh, mokshda, tanmay, LeepakshiYadav, AnkitSoni, arkaprabha, HarshitSharma, umang, varun, subham, akshay, YasserKhan, Deepeeka, SonuGupta, simran, ShivamDubey } from "../assets";
+import {
+  bhavya,
+  dheeraj,
+  abhi,
+  pawan,
+  piyush,
+  rishabh,
+  mokshda,
+  tanmay,
+  LeepakshiYadav,
+  AnkitSoni,
+  arkaprabha,
+  HarshitSharma,
+  umang,
+  varun,
+  subham,
+  akshay,
+  YasserKhan,
+  Deepeeka,
+  SonuGupta,
+  simran,
+  ShivamDubey,
+} from "../assets";
 
 const Data = [
   {
@@ -11,7 +33,7 @@ const Data = [
       {
         name: "Rishabh Jain",
         socials: "https://www.linkedin.com/in/rishabh-jain-067303199/",
-        desc: "",
+        desc: "Office Bearer",
         image: rishabh,
       },
       {
@@ -48,13 +70,13 @@ const Data = [
         name: "Mokshda Dave",
         socials: "https://www.linkedin.com/in/mokshda-dave-9a0ab8252",
         image: mokshda,
-        desc: "",
+        desc: "Office Bearer",
       },
       {
         name: "Tanmay Mandal",
         socials: "https://www.linkedin.com/in/tanmay-mandal-47286b190/",
         image: tanmay,
-        desc: "",
+        desc: "Office Bearer",
       },
     ],
   },
@@ -76,13 +98,13 @@ const Data = [
       {
         name: "Leepakshi Yadav",
         socials: "https://www.linkedin.com/in/leepakshi-yadav-12975a11a/",
-        desc: "Office Bearer",
+        desc: "Vice Chairperson",
         image: LeepakshiYadav,
       },
       {
         name: "Harshit Sharma",
         socials: "https://www.linkedin.com/in/harshit-sharma-56306a227/",
-        desc: "Office Bearer",
+        desc: "Programmer",
         image: HarshitSharma,
       },
       {
@@ -95,18 +117,18 @@ const Data = [
         name: "Arkaprabha Ghosh",
         socials: "https://www.linkedin.com/in/arkaprabha-ghosh-a2733917a/",
         image: arkaprabha,
-        desc: "Office Bearer",
+        desc: "Public relations in-charge",
       },
       {
         name: "Subham Jha",
         socials: "/",
         image: subham,
-        desc: "Office Bearer",
+        desc: "Overall Coordinator",
       },
       {
         name: "Akshay Raj Singh",
         socials: "/",
-        desc: "Office Bearer",
+        desc: "Editor In-charge",
         image: akshay,
       },
     ],
@@ -124,7 +146,7 @@ const Data = [
         name: "Simran Garg",
         socials: "https://www.linkedin.com/in/simran-garg-0501",
         desc: "Vice Chairperson",
-        image: simran, 
+        image: simran,
       },
       {
         name: "Sonu Gupta",
@@ -135,15 +157,15 @@ const Data = [
       {
         name: "Deepeeka",
         socials: "https://www.linkedin.com/in/deepeekachudasama/",
-        desc: "",
+        desc: "Programmer",
         image: Deepeeka,
       },
       {
         name: "Yasser Osman Khan",
         socials: "https://www.linkedin.com/in/yasserkhan45",
-        desc: "",
+        desc: "Webmaster",
         image: YasserKhan,
-      }
+      },
     ],
   },
 ];

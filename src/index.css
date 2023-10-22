@@ -1148,21 +1148,18 @@ primary-button::after {
 
 /* ----------------------------- */
 /* ------------FOOTER----------- */
-.footer {
+/* write footer class so that it always sticks to the bottom  */
+/* .footer{
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 100px;
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
-.footer-upper {
-  width: 100vw;
-  height: 12vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
 
 .footer-lower {
   width: 100vw;
